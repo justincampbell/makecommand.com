@@ -20,7 +20,7 @@ HUGO_PACKAGE_CACHE := $(TMPDIR)$(HUGO_PACKAGE_FILENAME)
 default: build
 
 build: $(HUGO)
-	@$(HUGO) version
+	$(HUGO)
 
 $(HUGO): $(HUGO_PACKAGE_CACHE) $(BIN)
 ifeq ($(OS), linux)
